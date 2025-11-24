@@ -18,7 +18,69 @@
 
 
     <header class="container-fluid">
-        <section class="hero-section">
+
+        <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            
+            <!-- Nombre del sitio -->
+            <a class="navbar-brand fw-bold" href="#hero">
+                <i class="bi bi-code-slash me-2"></i>Media Queries CSS
+            </a>
+
+            <!-- Botón responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Items del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#que-son">
+                            ¿Qué son?
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sintaxis">
+                            Sintaxis
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ejemplos">
+                            Ejemplos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">
+                            Beneficios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#practica">
+                            Práctica
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <section id="hero"  class="hero-section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -38,14 +100,14 @@
 
 
 
-    <main class="container my-4">
+    <main class="container my-4 pt-5 ">
 
         <div class="row">
             <div class="col-lg-12">
 
                 <!-- que son -->
-                <div class="card feature-card mb-4">
-                    <div class="card-body">
+                <div id="que-son" class="card feature-card mb-4 hero-section">
+                    <div class="card-body section">
                         <h2 class="card-title text-primary mb-4">
                             <i class="bi bi-search me-2"></i>¿Qué son las Media Queries?
                         </h2>
@@ -77,7 +139,7 @@
                 </div>
 
                 <!-- sintaxis basicas -->
-                <div class="card feature-card mb-4">
+                <div id="sintaxis" class="card feature-card mb-4 hero-section">
                     <div class="card-body">
                         <h2 class="card-title text-primary mb-4">
                             <i class="bi bi-gear me-2"></i>Sintaxis Básica
@@ -119,7 +181,7 @@
                 </div>
 
                 <!-- ejemplos-->
-                <div class="card feature-card mb-4">
+                <div id="ejemplos" class="card feature-card mb-4 hero-section">
                     <div class="card-body">
                         <h2 class="card-title text-primary mb-4">
                             <i class="bi bi-phone me-2"></i>Ejemplos Prácticos
@@ -190,7 +252,7 @@
                 </div>
 
                 <!-- beneficios -->
-                <div class="card feature-card mb-4">
+                <div id="beneficios" class="card feature-card mb-4 hero-section">
                     <div class="card-body">
                         <h2 class="card-title text-primary mb-4">
                             <i class="bi bi-award me-2"></i> Beneficios del Diseño Responsivo
@@ -229,7 +291,7 @@
                 </div>
 
                 <!-- buena practica -->
-                <div class="card feature-card mb-4">
+                <div  class="card feature-card mb-4 hero-section">
                     <div class="card-body">
                         <h2 class="card-title text-primary mb-4">
                             <i class="bi bi-check2-circle me-2"></i> Buenas Prácticas
@@ -272,7 +334,7 @@
                 </div>
 
                 <!-- demostracion -->
-                <div class="demo-area">
+                <div id="practica" class="demo-area hero-section">
                     <h2 class="text-primary mb-4">
                         <i class="bi bi-controller me-2"></i> Demostración Práctica
                     </h2>
@@ -317,7 +379,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h5 class="mb-2"><i class="bi bi-mortarboard me-2"></i>Programación Web</h5>
-                    <p class="mb-1">Ingeniería en Software</p>
+                    <p class="mb-1">Ingeniería en Software - Angel Sabando - Ricardo Monge - Esteban Quiroga</p>
                     <p class="mb-0"><span id="currentDate"></span></p>
                 </div>
             </div>
