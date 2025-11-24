@@ -11,19 +11,30 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             min-height: 100vh;
             transition: all 0.5s ease;
+            padding-top: 70px;
         }
+
+        main {
+    padding-top: 70px;
+}
+
+nav {
+    scroll-margin-top: 160px; /* Ajusta según el alto de tu navbar */
+}
 
         .hero-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 3rem 0;
             margin-bottom: 2rem;
+            scroll-margin-top: 80px; 
         }
 
         .card {
             transition: all 0.3s ease;
             border: none;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            
         }
 
         .card:hover {
@@ -108,6 +119,7 @@
             
             .hero-section {
                 background: linear-gradient(135deg, #e74c3c 0%, #ee5a52 100%);
+
             }
             
             .card {
