@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentación: Media Queries en CSS</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+    }
+
+    .slide {
+        width: 100%;
+        min-height: 100vh;
+        padding: 60px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #333;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #444;
+    }
+
+    p, li {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: #222;
+        margin-left: 20px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    .code {
+        background: #272822;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        font-family: "Courier New", monospace;
+        font-size: 1rem;
+        white-space: pre-wrap;
+        margin-top: 20px;
+    }
+
+    .ejemplo-box {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ======== MEDIA QUERIES PARA DEMOSTRACIÓN ======== */
+
+    /* PC */
+    @media (min-width: 1025px) {
+        body {
+            background-color: #ffb3b3;
+        }
+    }
+
+    /* Tablet */
+    @media (min-width: 481px) and (max-width: 1024px) {
+        body {
+            background-color: #b3ffb6;
+        }
+    }
+
+    /* Móvil */
+    @media (max-width: 480px) {
+        body {
+            background-color: #b3d7ff;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<!-- ===================== SLIDE 1 ===================== -->
+<div class="slide" id="slide1">
+    <h1>Media Queries en CSS</h1>
+    <h2>Presentación para la asignatura de Programación Web</h2>
+    <p><b>Estudiante:</b> Angel Sabando</p>
+    <p><b>Carrera:</b> Ingeniería en Software</p>
+</div>
+
+<!-- ===================== SLIDE 2 ===================== -->
+<div class="slide" id="slide2">
+    <h2>¿Qué son las Media Queries?</h2>
+    <p>Son reglas de CSS que permiten aplicar estilos dependiendo del:</p>
+    <ul>
+        <li>Tamaño de pantalla</li>
+        <li>Resolución</li>
+        <li>Orientación (vertical u horizontal)</li>
+        <li>Tipo de dispositivo</li>
+    </ul>
+    <p>Son esenciales para el diseño <b>responsive</b> y sitios modernos.</p>
+</div>
+
+<!-- ===================== SLIDE 3 ===================== -->
+<div class="slide" id="slide3">
+    <h2>¿Por qué son importantes?</h2>
+    <ul>
+        <li>Permiten adaptar la web a móviles, tablets y PC.</li>
+        <li>Mejoran la experiencia del usuario.</li>
+        <li>Evitan tener páginas separadas para mobile/desktop.</li>
+        <li>Son estándar en el desarrollo web actual.</li>
+    </ul>
+</div>
+
+<!-- ===================== SLIDE 4 ===================== -->
+<div class="slide" id="slide4">
+    <h2>Sintaxis de una Media Query</h2>
+    <div class="code">
+@media (condición) {
+    /* Estilos aplicados si la condición se cumple */
+}
+    </div>
+</div>
+
+<!-- ===================== SLIDE 5 ===================== -->
+<div class="slide" id="slide5">
+    <h2>Breakpoints más usados</h2>
+    <ul>
+        <li><b>Móvil:</b> 0px - 480px</li>
+        <li><b>Tablet:</b> 481px - 1024px</li>
+        <li><b>PC:</b> 1025px en adelante</li>
+    </ul>
+</div>
+
+<!-- ===================== SLIDE 6 ===================== -->
+<div class="slide" id="slide6">
+    <h2>Ejemplo: Media Query para móvil</h2>
+    <div class="code">
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+    </div>
+</div>
+
+<!-- ===================== SLIDE 7 ===================== -->
+<div class="slide" id="slide7">
+    <h2>Ejemplo: Media Query para tablet</h2>
+    <div class="code">
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+    </div>
+</div>
+
+<!-- ===================== SLIDE 8 ===================== -->
+<div class="slide" id="slide8">
+    <h2>Ejemplo: Media Query para PC</h2>
+    <div class="code">
+@media (min-width: 1025px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+    </div>
+</div>
+
+<!-- ===================== SLIDE 9 ===================== -->
+<div class="slide" id="slide9">
+    <h2>Demostración práctica</h2>
+    <p>El fondo cambia según el dispositivo:</p>
+    <ul>
+        <li>📱 Móvil – Azul</li>
+        <li>📘 Tablet – Verde</li>
+        <li>💻 PC – Rojo</li>
+    </ul>
+
+    <p>Prueba ajustar el tamaño del navegador.</p>
+</div>
+
+<!-- ===================== SLIDE 10 ===================== -->
+<div class="slide" id="slide10">
+    <h2>Ejemplo práctico con contenido adaptable</h2>
+
+    <div class="ejemplo-box">
+        <p>Este texto cambiará su tamaño y ancho según el dispositivo.</p>
+        <p>Las media queries permiten mejorar la presentación en cada pantalla.</p>
+    </div>
+</div>
+
+<!-- ===================== SLIDE 11 ===================== -->
+<div class="slide" id="slide11">
+    <h2>Conclusiones</h2>
+    <ul>
+        <li>Las media queries son fundamentales en el diseño responsive.</li>
+        <li>Permiten crear interfaces flexibles y adaptables.</li>
+        <li>Son fáciles de usar y muy poderosas en CSS.</li>
+        <li>Todo sitio moderno debe implementarlas.</li>
+    </ul>
+</div>
+
+<!-- ===================== SLIDE 12 ===================== -->
+<div class="slide" id="slide12">
+    <h1>¡Gracias!</h1>
+    <h2>¿Preguntas?</h2>
+</div>
+
+</body>
+</html>
