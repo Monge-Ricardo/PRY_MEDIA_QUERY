@@ -103,6 +103,7 @@
         @media (min-width: 1025px) {
             body {
                 background-color: #3498db;
+                font-size: 18px;
             }
             
             .hero-section {
