@@ -113,12 +113,19 @@
             .card {
                 background: rgba(255, 255, 255, 0.95);
             }
+
+            nav ul{
+                display: flex;
+                gap: 20px;
+                flex-direction: row;
+            }
         }
 
         /* Tablet */
         @media (min-width: 481px) and (max-width: 1024px) {
             body {
                 background-color: #2ecc71;
+                font-size: 16px;
             }
             
             .hero-section {
@@ -127,6 +134,12 @@
             
             .card {
                 background: rgba(255, 255, 255, 0.95);
+            }
+
+            nav ul{
+                display: flex;
+                gap: 15px;
+                flex-direction: row;
             }
         }
 
@@ -142,6 +155,12 @@
             
             .card {
                 background: rgba(255, 255, 255, 0.95);
+            }
+
+            nav ul{
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
             }
         }
 
